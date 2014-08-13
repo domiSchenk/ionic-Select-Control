@@ -21,14 +21,16 @@ angular.module('myApp', ['$selectBox'])
           		ng-placeholder="{{ 'noPerson' | translate}}"></select-box>
  ```
  
- ## Parameter
- ng-Selected-Value      ->    Selected value
- ng-Selected-Id         ->    Index of selected value
- ng-data                ->    Object passed to SelectBox
- ng-Item-Name           ->    Variable name that contains the value of item
- ng-Item-Id             ->    Variable name that contains the id of item
- ng-placeholder         ->    Placholder when no value is selected
- ng-title               ->    Title of SelectBox
+## Parameter
+| Name  | Description |
+| :------------- | :------------- |
+|ng-Selected-Value|Selected value|
+|ng-Selected-Id|Index of selected value|
+|ng-data|Object passed to SelectBox|
+|ng-Item-Name|Variable name that contains the value of item|
+|ng-Item-Id|Variable name that contains the id of item|
+|ng-placeholder|Placholder when no value is selected|
+|ng-title|Title of SelectBox|
  
  
  **Example of object passed**
