@@ -17,7 +17,7 @@ angular.module('myApp', ['$selectBox'])
           		ng-Item-Name="name" 
           		ng-Item-Id="id" 
           		ng-title="{{'SelectBoxTitle' | translate}} " 
-          		ng-data="birthdays" 
+          		ng-data="obj" 
           		ng-placeholder="{{ 'noPerson' | translate}}"></select-box>
  ```
  
