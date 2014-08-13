@@ -36,9 +36,9 @@ angular.module('myApp', ['$selectBox'])
  **Example of object passed**
  ```javascript
 var obj = [
-  {name: "Value1", id="1"},
-  {name: "Value2", id="2"},
-  {name: "Value3", id="3"},
-  {name: "Value4", id="4"},
+  {name: "Value1", id:"1"},
+  {name: "Value2", id:"2"},
+  {name: "Value3", id:"3"},
+  {name: "Value4", id:"4"},
 ]
  ```
