@@ -11,7 +11,7 @@ Include as a dependency in your angular module
 angular.module('myApp', ['$selectBox'])
 ```
 
-```javascript
+```HTML
   <select-box ng-Selected-Value="selectedValue" 
           		ng-Selected-Id="selectedId" 
           		ng-Item-Name="name" 
