@@ -3,7 +3,7 @@ angular.module('$selectBox', [])
         return {
             restrict: 'E',
             require: ['ngModel', 'ngData','ngSelectedId','ngSelectedValue','?ngTitle','ngiItemName','ngItemId'],
-            template: '<input id="showed" type="text" ng-click="showSelectModal()" readonly/>' +
+            template: '<input id="showed" type="text" ng-click="showSelectModal()" style="cursor:inherit;" readonly />' +
             '<span id="hidden" type="text" style="display: none;"></span>',
             controller: ($scope, $element, $attrs, $ionicModal, $parse) => {
                 $scope.modal = {};
@@ -25,7 +25,7 @@ angular.module('$selectBox', [])
 
                 //{{'Gift.modalTitle' | translate}} 
                 $scope.modal = $ionicModal.fromTemplate(
-                    '<div class="modal" id="select">' +
+                    '<ion-modal-view id="select">' +
                     '<ion-header-bar>' +
                     '<h1 class="title">' + $attrs.ngTitle + '</h1>' +
                     ' <a ng-click="closeSelectModal()" class="button button-icon icon ion-close"></a>' +
@@ -35,7 +35,7 @@ angular.module('$selectBox', [])
                     '<li class="item" ng-click="clickItem(item)" ng-repeat="item in data" ng-bind-html="item[\''+ $attrs.ngItemName +'\']"></li>' +
                     '</ul>' +
                     ' </ion-content>' +
-                    '</div>',
+                    '</ion-modal-view>',
                     {
                         scope: $scope,
                         animation: 'slide-in-right'
