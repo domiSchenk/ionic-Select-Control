@@ -31,9 +31,9 @@ angular.module('$selectBox', [])
                     ' <a ng-click="closeSelectModal()" class="button button-icon icon ion-close"></a>' +
                     '</ion-header-bar>' +
                     '<ion-content>' +
-                    '<ul class="list">' +
-                    '<li class="item" ng-click="clickItem(item)" ng-repeat="item in data" ng-bind-html="item[\''+ $attrs.ngItemName +'\']"></li>' +
-                    '</ul>' +
+                    '<ion-list>' +
+                    '<ion-item  ng-click="clickItem(item)" ng-repeat="item in data" ng-bind-html="item[\''+ $attrs.ngItemName +'\']"></ion-item>' +
+                    '</ion-list>' +
                     ' </ion-content>' +
                     '</ion-modal-view>',
                     {
