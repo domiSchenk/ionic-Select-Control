@@ -23,7 +23,6 @@ angular.module('$selectBox', [])
                     $scope.modal.remove();
                 });
 
-                //{{'Gift.modalTitle' | translate}} 
                 $scope.modal = $ionicModal.fromTemplate(
                     '<ion-modal-view id="select">' +
                     '<ion-header-bar>' +
@@ -52,7 +51,6 @@ angular.module('$selectBox', [])
                 };
             },
             compile: ($element, $attrs) => {
-
 
                 var input = $element.find('input');
                 angular.forEach({

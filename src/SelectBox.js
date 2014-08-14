@@ -21,7 +21,6 @@ angular.module('$selectBox', []).directive('selectBox', function () {
                 $scope.modal.remove();
             });
 
-            //{{'Gift.modalTitle' | translate}}
             $scope.modal = $ionicModal.fromTemplate('<ion-modal-view id="select">' + '<ion-header-bar>' + '<h1 class="title">' + $attrs.ngTitle + '</h1>' + ' <a ng-click="closeSelectModal()" class="button button-icon icon ion-close"></a>' + '</ion-header-bar>' + '<ion-content>' + '<ion-list>' + '<ion-item  ng-click="clickItem(item)" ng-repeat="item in data" ng-bind-html="item[\'' + $attrs.ngItemName + '\']"></ion-item>' + '</ion-list>' + ' </ion-content>' + '</ion-modal-view>', {
                 scope: $scope,
                 animation: 'slide-in-right'
