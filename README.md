@@ -1,3 +1,8 @@
+THIS PROJECT IS DEPRECATED
+====================
+
+Component is not maintained anymore!
+
 ionic-Select-Control
 ====================
 
